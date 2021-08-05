@@ -19,6 +19,7 @@ public void start(Stage primaryStage) throws Exception {
     primaryStage.setTitle("My Application");
 
     primaryStage.setScene(scene);
+    primaryStage.setResizable(false);
     primaryStage.show();
 }
 
