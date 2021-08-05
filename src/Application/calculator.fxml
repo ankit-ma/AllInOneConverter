@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="calPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="360.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.Calculator">
+   <children>
+      <TextField fx:id="screen" layoutX="27.0" layoutY="46.0" onAction="#screenText" prefHeight="63.0" prefWidth="307.0">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </TextField>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-3.0" layoutY="-5.0" prefHeight="39.0" prefWidth="366.0" style="-fx-background-color: red;" text="Calculator" textFill="#fdfdfd">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Label>
+      <Button fx:id="nine" layoutX="53.0" layoutY="172.0" mnemonicParsing="false" onAction="#nineBtn" prefHeight="50.0" prefWidth="54.0" style="-fx-background-radius: 50px; -fx-background-color: grey;" text="9">
+         <font>
+            <Font size="19.0" />
+         </font></Button>
+      <Button fx:id="eight" layoutX="114.0" layoutY="172.0" mnemonicParsing="false" onAction="#eightBtn" prefHeight="50.0" prefWidth="54.0" style="-fx-background-radius: 50px; -fx-background-color: grey;" text="8">
+         <font>
+            <Font size="19.0" />
+         </font></Button>
+      <Button fx:id="seven" layoutX="174.0" layoutY="172.0" mnemonicParsing="false" onAction="#sevenBtn" prefHeight="50.0" prefWidth="54.0" style="-fx-background-radius: 50px; -fx-background-color: grey;" text="7">
+         <font>
+            <Font size="19.0" />
+         </font></Button>
+      <Button fx:id="one" layoutX="54.0" layoutY="303.0" mnemonicParsing="false" onAction="#oneBtn" prefHeight="50.0" prefWidth="54.0" style="-fx-background-radius: 50px; -fx-background-color: grey;" text="1">
+         <font>
+            <Font size="19.0" />
+         </font></Button>
+      <Button fx:id="two" layoutX="115.0" layoutY="303.0" mnemonicParsing="false" onAction="#twoBtn" prefHeight="50.0" prefWidth="54.0" style="-fx-background-radius: 50px; -fx-background-color: grey;" text="2">
+         <font>
+            <Font size="19.0" />
+         </font></Button>
+      <Button fx:id="three" layoutX="175.0" layoutY="303.0" mnemonicParsing="false" onAction="#threeBtn" prefHeight="50.0" prefWidth="54.0" style="-fx-background-radius: 50px; -fx-background-color: grey;" text="3">
+         <font>
+            <Font size="19.0" />
+         </font></Button>
+      <Button fx:id="six" layoutX="55.0" layoutY="240.0" mnemonicParsing="false" onAction="#sixBtn" prefHeight="50.0" prefWidth="54.0" style="-fx-background-radius: 50px; -fx-background-color: grey;" text="6">
+         <font>
+            <Font size="19.0" />
+         </font></Button>
+      <Button fx:id="five" layoutX="116.0" layoutY="240.0" mnemonicParsing="false" onAction="#fiveBtn" prefHeight="50.0" prefWidth="54.0" style="-fx-background-radius: 50px; -fx-background-color: grey;" text="5">
+         <font>
+            <Font size="19.0" />
+         </font></Button>
+      <Button fx:id="four" layoutX="176.0" layoutY="240.0" mnemonicParsing="false" onAction="#fourBtn" prefHeight="50.0" prefWidth="54.0" style="-fx-background-radius: 50px; -fx-background-color: grey;" text="4">
+         <font>
+            <Font size="19.0" />
+         </font></Button>
+      <Button fx:id="zero" layoutX="55.0" layoutY="363.0" mnemonicParsing="false" onAction="#zeroBtn" prefHeight="50.0" prefWidth="171.0" style="-fx-background-radius: 50px; -fx-background-color: grey;" text="0">
+         <font>
+            <Font size="21.0" />
+         </font></Button>
+      <Button fx:id="equal" layoutX="260.0" layoutY="416.0" mnemonicParsing="false" onAction="#equalBtn" prefHeight="50.0" prefWidth="54.0" style="-fx-background-radius: 50px; -fx-background-color: green;" text="=">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+      <Button fx:id="plus" layoutX="258.0" layoutY="170.0" mnemonicParsing="false" onAction="#plusBtn" prefHeight="50.0" prefWidth="54.0" style="-fx-background-radius: 50px; -fx-background-color: orange;" text="+">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+      <Button fx:id="mul" layoutX="259.0" layoutY="301.0" mnemonicParsing="false" onAction="#mulBtn" prefHeight="50.0" prefWidth="54.0" style="-fx-background-radius: 50px; -fx-background-color: orange;" text="X">
+         <font>
+            <Font size="21.0" />
+         </font></Button>
+      <Button fx:id="minus" layoutX="260.0" layoutY="238.0" mnemonicParsing="false" onAction="#minusbtn" prefHeight="50.0" prefWidth="54.0" style="-fx-background-radius: 50px; -fx-background-color: orange;" text="-">
+         <font>
+            <Font size="25.0" />
+         </font></Button>
+      <Button fx:id="div" layoutX="260.0" layoutY="361.0" mnemonicParsing="false" onAction="#divBtn" prefHeight="50.0" prefWidth="54.0" style="-fx-background-radius: 50px; -fx-background-color: orange;" text="/">
+         <font>
+            <Font size="26.0" />
+         </font></Button>
+      <Button fx:id="reset" layoutX="53.0" layoutY="416.0" mnemonicParsing="false" onAction="#resetBtn" prefHeight="50.0" prefWidth="114.0" style="-fx-background-radius: 50px; -fx-background-color: red; -fx-text-fill: white;" text="RESET" />
+      <Button fx:id="mainMenu" layoutX="181.0" layoutY="416.0" mnemonicParsing="false" onAction="#mainMenuBtn" prefHeight="50.0" prefWidth="54.0" style="-fx-background-radius: 50px; -fx-background-color: green; -fx-background-image: url(/Application/homeicon.png)" />
+      <Label layoutX="27.0" layoutY="109.0" />
+   </children>
+</AnchorPane>

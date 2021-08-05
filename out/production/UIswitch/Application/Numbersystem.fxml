@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="numPane" prefHeight="480.0" prefWidth="360.0" style=" -fx-background-image:url(/Application/loginBack.png)" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.Numbersystem">
+   <children>
+      <Label layoutX="30.0" layoutY="103.0" prefHeight="17.0" prefWidth="72.0" text="Decimal" />
+      <Label layoutX="30.0" layoutY="136.0" prefHeight="17.0" prefWidth="72.0" text="Binary" />
+      <Label layoutX="30.0" layoutY="173.0" prefHeight="17.0" prefWidth="72.0" text="octal" />
+      <Label layoutX="30.0" layoutY="208.0" text="Hexadecimal" />
+      <TextField fx:id="decimalText" layoutX="132.0" layoutY="99.0" onAction="#decAction" onKeyPressed="#keyDec" promptText="Decimal number" />
+      <TextField fx:id="binaryText" layoutX="132.0" layoutY="132.0" onAction="#binAction" onKeyPressed="#keyBin" promptText="Binary number" />
+      <TextField fx:id="octalText" layoutX="132.0" layoutY="169.0" onAction="#octAction" onKeyPressed="#keyOct" promptText="Octal number" />
+      <TextField fx:id="hexaText" layoutX="132.0" layoutY="204.0" onAction="#hexaAction" onKeyPressed="#keyHex" promptText=" Hexadecimal Number" />
+      <Button fx:id="calculate" layoutX="132.0" layoutY="268.0" mnemonicParsing="false" onAction="#calAction" style="-fx-background-radius: 50px; -fx-background-color: green; -fx-text-fill: white;" text="Calculate" />
+      <Button fx:id="menu" layoutX="28.0" layoutY="33.0" mnemonicParsing="false" onAction="#homeAction" prefHeight="50.0" prefWidth="54.0" style="-fx-background-radius: 50px; -fx-background-image : url(/Application/homeicon.png)" />
+      <Button fx:id="reset" layoutX="53.0" layoutY="269.0" mnemonicParsing="false" onAction="#resetAction" style="-fx-background-radius: 50px; -fx-background-color: red; -fx-text-fill: white;" text="Reset" />
+   </children>
+</AnchorPane>

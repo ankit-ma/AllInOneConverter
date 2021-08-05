@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="tempPane" prefHeight="480.0" prefWidth="360.0" style="-fx-background-color: #80dfff#80dfff;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.Temperature">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutY="-2.0" prefHeight="33.0" prefWidth="362.0" style="-fx-background-color: #00cc66#00cc66;" text="Temperatur Converter">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="60.0" text="Farhenheit" />
+      <Label layoutX="30.0" layoutY="101.0" text="Celsius" />
+      <Label layoutX="30.0" layoutY="140.0" text="Kelvin" />
+      <TextField fx:id="farh" layoutX="110.0" layoutY="56.0" onAction="#farhText" />
+      <TextField fx:id="cel" layoutX="110.0" layoutY="97.0" onAction="#celText" />
+      <TextField fx:id="kelvin" layoutX="110.0" layoutY="136.0" onAction="#kelvintext" />
+      <ImageView fx:id="imgae" fitHeight="150.0" fitWidth="200.0" layoutX="81.0" layoutY="223.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="calculate" layoutX="109.0" layoutY="183.0" mnemonicParsing="false" onAction="#calculateBtn" style="-fx-background-radius: 50px; -fx-background-color: lime; -fx-text-fill: black;" text="Calculate" />
+      <Label layoutX="270.0" layoutY="61.0" text="°F" />
+      <Label layoutX="268.0" layoutY="102.0" text="°C" />
+      <Label layoutX="268.0" layoutY="141.0" text="°K" />
+      <Button fx:id="reset" layoutX="208.0" layoutY="183.0" mnemonicParsing="false" onAction="#resetBtn" style="-fx-background-radius: 50px; -fx-background-color: red; -fx-text-fill: white;" text="Reset" />
+      <Label layoutX="15.0" layoutY="449.0" text="Ankit kumar Software Copyright" />
+      <Button fx:id="mainMenu" layoutX="268.0" layoutY="408.0" mnemonicParsing="false" onAction="#mainMenuBtn" prefHeight="50.0" prefWidth="54.0" style="-fx-background-radius: 50px; -fx-background-image : url(/Application/homeicon.png)" />
+   </children>
+</AnchorPane>
